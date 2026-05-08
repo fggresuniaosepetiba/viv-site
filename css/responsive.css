@@ -1,0 +1,539 @@
+/* ============================================
+   Instituto V.I.V - Responsive Styles
+   ============================================
+   Desktop-first approach with progressive
+   enhancement for all screen sizes.
+   ============================================ */
+
+/* === Large Desktop / Ultrawide (1400px+) === */
+@media (min-width: 1400px) {
+  :root {
+    --max-width: 1400px;
+    --gutter: 32px;
+  }
+
+  .hero {
+    min-height: 920px;
+  }
+
+  .hero-text-box {
+    max-width: 680px;
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .impact-number {
+    font-size: 72px;
+  }
+
+  .testimonials-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    --max-width: 1600px;
+    --gutter: 40px;
+  }
+
+  .hero {
+    min-height: 1000px;
+  }
+}
+
+/* === Desktop (1025px - 1399px) === */
+@media (max-width: 1399px) {
+  .hero {
+    min-height: 800px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .impact-number {
+    font-size: 56px;
+  }
+
+  .testimonial-card--offset {
+    margin-top: var(--space-md);
+  }
+
+  .testimonial-card--offset-right {
+    margin-top: var(--space-md);
+  }
+}
+
+/* === Small Desktop / Large Tablet (1024px) === */
+@media (max-width: 1024px) {
+  :root {
+    --gutter: 20px;
+    --space-xl: 60px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero {
+    min-height: 700px;
+  }
+
+  .hero-text-box {
+    max-width: 540px;
+    padding: var(--space-md);
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .nav-list {
+    gap: 2px;
+  }
+
+  .btn-donate {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+
+  .projects-grid {
+    gap: var(--space-base);
+  }
+
+  .project-card-image {
+    height: 200px;
+  }
+
+  .impact-number {
+    font-size: 48px;
+  }
+
+  .footer-grid {
+    gap: var(--space-md);
+  }
+}
+
+/* === Tablet Horizontal (769px - 1023px) === */
+@media (max-width: 1023px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-actions .btn-donate {
+    display: none;
+  }
+
+  .navbar-actions {
+    gap: var(--space-sm);
+  }
+
+  .hero-text-box {
+    max-width: 100%;
+    background: rgba(0, 29, 89, 0.5);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 29, 89, 0.7) 0%,
+      rgba(0, 29, 89, 0.5) 100%
+    );
+  }
+
+  .mvv-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-base);
+  }
+
+  .mvv-card {
+    padding: var(--space-md);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-base);
+  }
+
+  .project-card-image {
+    height: 180px;
+  }
+
+  .help-grid {
+    gap: var(--space-base);
+  }
+
+  .help-card {
+    padding: var(--space-md);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-base);
+  }
+
+  .testimonial-card--offset,
+  .testimonial-card--offset-right,
+  .testimonial-card--offset-bottom {
+    margin-top: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+/* === Tablet Vertical (481px - 768px) === */
+@media (max-width: 768px) {
+  :root {
+    --gutter: 16px;
+    --space-xl: 48px;
+    --space-lg: 32px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-body-md);
+  }
+
+  .hero-text-box {
+    padding: var(--space-md);
+    backdrop-filter: blur(8px);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mvv-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-base);
+  }
+
+  .mvv-card {
+    padding: var(--space-md);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-base);
+  }
+
+  .project-card-image {
+    height: 220px;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .impact-number {
+    font-size: 48px;
+  }
+
+  .impact-label {
+    font-size: var(--text-body-lg);
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-base);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-base);
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-desc {
+    font-size: var(--text-body-md);
+  }
+
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-text {
+    font-size: var(--text-body-md);
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .cta-actions .btn-primary,
+  .cta-actions .btn-outline {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-brand-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-col-title {
+    text-align: center;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-contact {
+    align-items: center;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+  }
+
+  .mobile-menu {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .mobile-nav-link {
+    text-align: center;
+  }
+
+  /* Make cards full-width on mobile */
+  .mvv-card,
+  .project-card,
+  .help-card,
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .section-header .section-tag::before,
+  .section-header .section-tag::after {
+    display: none;
+  }
+}
+
+/* === Mobile (361px - 480px) === */
+@media (max-width: 480px) {
+  :root {
+    --gutter: 12px;
+    --space-xl: 40px;
+    --space-lg: 24px;
+    --space-md: 16px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero-text-box {
+    padding: var(--space-base);
+    border-radius: var(--radius-lg);
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-tag {
+    font-size: 12px;
+  }
+
+  .impact-number {
+    font-size: 40px;
+  }
+
+  .impact-label {
+    font-size: var(--text-body-md);
+  }
+
+  .cta-title {
+    font-size: 26px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 14px 24px;
+    font-size: 12px;
+  }
+
+  .project-card-image {
+    height: 200px;
+  }
+
+  .logo-circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer-grid {
+    gap: var(--space-md);
+  }
+
+  .testimonial-card {
+    padding: var(--space-base);
+  }
+}
+
+/* === Small Mobile (max 360px) === */
+@media (max-width: 360px) {
+  :root {
+    --gutter: 10px;
+    --space-xl: 32px;
+    --space-lg: 20px;
+    --space-md: 12px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 90px 0 48px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .impact-number {
+    font-size: 34px;
+  }
+
+  .cta-title {
+    font-size: 22px;
+  }
+
+  .project-card-image {
+    height: 180px;
+  }
+
+  .project-card-body {
+    padding: var(--space-base);
+  }
+}
+
+/* === Height-based adjustments === */
+@media (max-height: 700px) {
+  .hero {
+    min-height: 500px;
+    padding: 80px 0 40px;
+  }
+
+  .hero-text-box {
+    padding: var(--space-md);
+  }
+
+  .hero-title {
+    margin-bottom: var(--space-sm);
+  }
+
+  .hero-subtitle {
+    margin-bottom: var(--space-base);
+  }
+}
+
+/* === Touch optimization === */
+@media (hover: none) and (pointer: coarse) {
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 12px 14px;
+  }
+
+  .mobile-nav-link {
+    padding: 16px var(--space-base);
+  }
+
+  .btn-donate,
+  .btn-primary,
+  .btn-outline,
+  .help-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .project-card-link {
+    padding: 8px 0;
+  }
+
+  .card-shadow:hover {
+    box-shadow: var(--shadow-card);
+  }
+}
+
+/* === Safe Area Insets (Notch devices) === */
+@supports (padding: env(safe-area-inset-top)) {
+  .navbar {
+    padding-top: env(safe-area-inset-top);
+    height: calc(var(--nav-height) + env(safe-area-inset-top));
+  }
+
+  .mobile-menu {
+    padding-top: calc(var(--nav-height) + var(--space-md) + env(safe-area-inset-top));
+  }
+
+  .footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

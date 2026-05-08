@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instituto Social e Cultural Vidas Investindo em Vidas - Transformando realidades através da educação, cultura e assistência social.">
+  <meta name="theme-color" content="#001d59">
+  <title>Instituto V.I.V - Vidas Investindo em Vidas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Atkinson+Hyperlegible+Next:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo" aria-label="Instituto V.I.V - Página inicial">
+        <div class="logo-circle">
+          <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20 4C15 4 10 8 10 14C10 20 20 32 20 32C20 32 30 20 30 14C30 8 25 4 20 4Z" fill="#006e1c" stroke="#006e1c" stroke-width="1.5"/>
+            <path d="M14 12C13 14 13 17 14 19C15 21 18 22 20 23" stroke="#001d59" stroke-width="2" stroke-linecap="round"/>
+            <path d="M26 12C27 14 27 17 26 19C25 21 22 22 20 23" stroke="#001d59" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </a>
+
+      <nav class="navbar-nav" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#quem-somos" class="nav-link active">Quem Somos</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#como-ajudar" class="nav-link">Como Ajudar</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#voluntario" class="nav-link">Seja Voluntário</a></li>
+          <li><a href="#equipe" class="nav-link">Nossa Equipe</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar-actions">
+        <a href="#doar" class="btn-donate">Doe Agora</a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+      <div class="mobile-menu-inner">
+        <ul class="mobile-nav-list">
+          <li><a href="#quem-somos" class="mobile-nav-link">Quem Somos</a></li>
+          <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
+          <li><a href="#como-ajudar" class="mobile-nav-link">Como Ajudar</a></li>
+          <li><a href="#galeria" class="mobile-nav-link">Galeria</a></li>
+          <li><a href="#voluntario" class="mobile-nav-link">Seja Voluntário</a></li>
+          <li><a href="#equipe" class="mobile-nav-link">Nossa Equipe</a></li>
+          <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        </ul>
+        <a href="#doar" class="btn-donate mobile-donate">Doe Agora</a>
+      </div>
+    </div>
+    <div class="mobile-overlay"></div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <picture>
+          <source media="(max-width: 768px)" srcset="https://lh3.googleusercontent.com/aida-public/AB6AXuCniOS31ZNp0m_NnHBfT7EJF1fzNvzvjj3aYOTY9TcCItM-9LgMoDj0qNltuUNWQVDgJP5weTbgJq-6LosKK1eg1tvVM17w6Upylx4GEfbVABQmV0usInOcJwN_y8ZzY22q6Ugvld-V63adxCIg83MDXXkmgO8vjwvbOAtpMyF3p4AIFrZVViClQoxvhKVro1Pb1cLlDfwl0k5bcd1-0XetZU0zEMPtet6B0zGQLoCQu0ls3gqjx1UZjFULkq9Ry0u1ty-84C14bgSv">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCniOS31ZNp0m_NnHBfT7EJF1fzNvzvjj3aYOTY9TcCItM-9LgMoDj0qNltuUNWQVDgJP5weTbgJq-6LosKK1eg1tvVM17w6Upylx4GEfbVABQmV0usInOcJwN_y8ZzY22q6Ugvld-V63adxCIg83MDXXkmgO8vjwvbOAtpMyF3p4AIFrZVViClQoxvhKVro1Pb1cLlDfwl0k5bcd1-0XetZU0zEMPtet6B0zGQLoCQu0ls3gqjx1UZjFULkq9Ry0u1ty-84C14bgSv" alt="Crianças em projeto social de futebol usando coletes azuis em campo verde.">
+        </picture>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text-box fade-in-up">
+          <h1 class="hero-title">Transformando realidades, investindo em vidas</h1>
+          <p class="hero-subtitle">Somos uma organização dedicada a criar oportunidades reais de desenvolvimento para famílias em situação de vulnerabilidade através da educação e cultura.</p>
+          <div class="hero-actions">
+            <a href="#doar" class="btn-primary">Doe Agora</a>
+            <a href="#voluntario" class="btn-outline">Seja Voluntário</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission / Vision / Values -->
+    <section class="section" id="quem-somos">
+      <div class="container">
+        <div class="mvv-grid fade-in-up">
+          <article class="mvv-card mvv-card--primary">
+            <span class="material-symbols-outlined mvv-icon">rocket_launch</span>
+            <h2 class="mvv-title">Nossa Missão</h2>
+            <p class="mvv-text">Promover o desenvolvimento humano através de ações socioeducativas que resgatem a dignidade e autonomia das famílias.</p>
+          </article>
+          <article class="mvv-card mvv-card--secondary">
+            <span class="material-symbols-outlined mvv-icon">visibility</span>
+            <h2 class="mvv-title">Nossa Visão</h2>
+            <p class="mvv-text">Ser referência em impacto social, transformando comunidades através de projetos autossustentáveis e replicáveis.</p>
+          </article>
+          <article class="mvv-card mvv-card--tertiary">
+            <span class="material-symbols-outlined mvv-icon">favorite</span>
+            <h2 class="mvv-title">Nossos Valores</h2>
+            <p class="mvv-text">Ética, transparência, empatia e compromisso inabalável com a transformação social e a vida humana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section--gray" id="projetos">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Nossos Projetos</span>
+          <h2 class="section-title">Ações que Mudam o Mundo</h2>
+        </div>
+        <div class="projects-grid fade-in-up">
+          <article class="project-card">
+            <div class="project-card-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA90VISdKtzqKdq5MGxW05htYvX9v2jnWAw15rmS59OqJF1Pjb95iL9D-JGT31Vjmw3MGylxIJYca-_hKe3xGJnZF2h5hSx_1FYq2I_XQDXumYIf4-qU57WYv74BtCvIeriCfygOkIr3nQ-BeHErHzOH2Vi5R4uYvNYgf0nnLPI_bPmXYinCi4MvjNlBvZt8QCvqoAf3xDMW4tGj3lFcadmTfuEZuAmwWMGjVpNmrzFJEGuD_PGD0v0JFfWjkGVnMwjffUS65V6cBxs" alt="Crianças engajadas em atividade criativa em sala de aula moderna e iluminada." loading="lazy">
+              <span class="project-tag tag--primary">Educação</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Projeto Aprender</h3>
+              <p class="project-card-text">Reforço escolar e atividades extracurriculares para crianças e adolescentes da rede pública.</p>
+              <a href="#" class="project-card-link">Saiba Mais <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr6idXO30xECJoBWuIcoOYU8QA6CKtchwsJud_--vBPZaBaKLDl2BpuAe5M9Fv7SDF45mksWQote9y9tn-MJW9BJ6a-SgQjTXHHTui1srkdPkA1mSfGB590vNPcsLOCr3r2qwfVOhKyrlDhCkeFWamDDANsR3iBMtWaxsZdNSv3CLMpJ4h-zw7d1Z9F3U83aWKox6l7fJ4QUn4ExcaHORZTwso_cf0EJZDSQQTLr0PUw8Mr2EI1DMFRLHH6LhAe8Zujc-aEm-nzv8I" alt="Alimentos frescos sendo preparados em cozinha comunitária limpa e organizada." loading="lazy">
+              <span class="project-tag tag--secondary">Nutrição</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Segurança Alimentar</h3>
+              <p class="project-card-text">Distribuição mensal de cestas básicas e educação nutricional para famílias cadastradas.</p>
+              <a href="#" class="project-card-link">Saiba Mais <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDku0RxYzL6PQqEHqZg4wlyT9MLzt43ogvewFOg7n46TFOzRu9-60By4O8sfm6RzgkKwlrMN-GMlsaxDv1Wu3w2t34zHtI0q-88hGnO_4_8tCTKeRZzrDx0WvNHHTx_Rk62elZo_2qc4InnZFkfJPGX3BG1UAozEO3niIJM3kfgeR308gYKH3aSfS3dYSv5-iRfGCPESP7BOb_BKlHG6cHYQhA_M9qyHmyMF_fxSm-h1TfbXt0WvxQDKRWuHf8xJkhiuNhq6XsFuOjw" alt="Jovens participando de oficina cultural de música ou dança em estúdio minimalista." loading="lazy">
+              <span class="project-tag tag--tertiary">Cultura</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title">Oficinas VIV</h3>
+              <p class="project-card-text">Aulas de música, artes plásticas e teatro para despertar talentos e promover a inclusão social.</p>
+              <a href="#" class="project-card-link">Saiba Mais <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Numbers -->
+    <section class="impact-section">
+      <div class="container">
+        <div class="impact-grid fade-in-up">
+          <div class="impact-item">
+            <span class="impact-number" data-count="500">500+</span>
+            <p class="impact-label">Famílias Atendidas</p>
+          </div>
+          <div class="impact-item">
+            <span class="impact-number" data-count="100">100+</span>
+            <p class="impact-label">Voluntários</p>
+          </div>
+          <div class="impact-item">
+            <span class="impact-number" data-count="20">20+</span>
+            <p class="impact-label">Projetos Ativos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Help -->
+    <section class="section" id="como-ajudar">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag">Envolva-se</span>
+          <h2 class="section-title">Como você pode ajudar?</h2>
+          <p class="section-desc">Existem diversas formas de fazer parte da nossa rede de solidariedade.</p>
+        </div>
+        <div class="help-grid fade-in-up">
+          <article class="help-card">
+            <div class="help-icon help-icon--primary">
+              <span class="material-symbols-outlined">payments</span>
+            </div>
+            <h3 class="help-card-title">Doação Financeira</h3>
+            <p class="help-card-text">Contribua com qualquer valor para manter nossos projetos em funcionamento.</p>
+            <a href="#doar" class="help-btn help-btn--primary">Doar Agora</a>
+          </article>
+          <article class="help-card">
+            <div class="help-icon help-icon--secondary">
+              <span class="material-symbols-outlined">volunteer_activism</span>
+            </div>
+            <h3 class="help-card-title">Seja Voluntário</h3>
+            <p class="help-card-text">Doe seu tempo e talento para ajudar em nossas atividades diárias e eventos.</p>
+            <a href="#voluntario" class="help-btn help-btn--secondary">Cadastrar-se</a>
+          </article>
+          <article class="help-card">
+            <div class="help-icon help-icon--tertiary">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h3 class="help-card-title">Seja um Parceiro</h3>
+            <p class="help-card-text">Sua empresa pode apoiar projetos específicos através de parcerias estratégicas.</p>
+            <a href="#contato" class="help-btn help-btn--tertiary">Entrar em Contato</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--gray" id="galeria">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="material-symbols-outlined section-header-icon">format_quote</span>
+          <h2 class="section-title">Impacto que Transforma Vidas</h2>
+        </div>
+        <div class="testimonials-grid fade-in-up">
+          <article class="testimonial-card">
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #b4c5ff, #3959b0);">
+                <span>MS</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Maria Silva</p>
+                <p class="testimonial-role">Beneficiária</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"O Instituto mudou a trajetória da minha família. Meus filhos hoje têm acesso a artes que eu nunca poderia pagar."</p>
+          </article>
+          <article class="testimonial-card testimonial-card--offset">
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #7ddc7a, #006e1c);">
+                <span>JS</span>
+              </div>
+              <div>
+                <p class="testimonial-name">João Santos</p>
+                <p class="testimonial-role">Voluntário</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Ver o brilho nos olhos das crianças quando aprendem algo novo é o que me motiva a estar aqui todos os sábados."</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #ffb786, #f97f07);">
+                <span>AO</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Ana Oliveira</p>
+                <p class="testimonial-role">Parceira Corporativa</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Apoiamos o Instituto VIV pela transparência e pelo impacto real que vemos nas comunidades locais."</p>
+          </article>
+          <article class="testimonial-card testimonial-card--offset-bottom">
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #b4c5ff, #3959b0);">
+                <span>CE</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Carlos Eduardo</p>
+                <p class="testimonial-role">Ex-aluno</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Graças ao reforço escolar do projeto, hoje estou cursando engenharia em uma universidade federal."</p>
+          </article>
+          <article class="testimonial-card testimonial-card--offset-right">
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #7ddc7a, #006e1c);">
+                <span>HC</span>
+              </div>
+              <div>
+                <p class="testimonial-name">Helena Costa</p>
+                <p class="testimonial-role">Doadora Mensal</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+              <span class="material-symbols-outlined star-filled">star</span>
+            </div>
+            <p class="testimonial-text">"Saber que minha contribuição ajuda a manter essas oficinas vivas me traz uma paz enorme. É solidariedade real."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+      <div class="cta-bg">
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-content fade-in-up">
+          <h2 class="cta-title">Junte-se a nós na missão de transformar vidas</h2>
+          <p class="cta-text">Sua contribuição é a semente de um futuro melhor para centenas de pessoas.</p>
+          <div class="cta-actions">
+            <a href="#doar" class="btn-primary btn-primary--lg">Fazer uma Doação</a>
+            <a href="#voluntario" class="btn-outline btn-outline--light">Quero Ser Voluntário</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-circle logo-circle--sm">
+              <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M20 4C15 4 10 8 10 14C10 20 20 32 20 32C20 32 30 20 30 14C30 8 25 4 20 4Z" fill="#98f994" stroke="#98f994" stroke-width="1.5"/>
+                <path d="M14 12C13 14 13 17 14 19C15 21 18 22 20 23" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <path d="M26 12C27 14 27 17 26 19C25 21 22 22 20 23" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="footer-brand-name">Instituto V.I.V</span>
+          </div>
+          <p class="footer-brand-text">Vidas Investindo em Vidas: Construindo pontes entre a solidariedade e a necessidade real das nossas comunidades.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M16 8h-2a2 2 0 00-2 2v10m4-6h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 9.5v5l5-2.5-5-2.5z" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4M11 12v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#equipe">Nossa Equipe</a></li>
+            <li><a href="#projetos">Projetos Sociais</a></li>
+            <li><a href="#galeria">Galeria de Fotos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Links Legais</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Transparência</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contato</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="material-symbols-outlined">location_on</span>
+              <span>Rua da Solidariedade, 123 - Centro</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">call</span>
+              <span>(11) 4002-8922</span>
+            </li>
+            <li>
+              <span class="material-symbols-outlined">mail</span>
+              <span>contato@institutoviv.org.br</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Instituto Social e Cultural Vidas Investindo em Vidas. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" aria-label="Voltar ao topo">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </a>
+
+  <script src="js/interactions.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
