@@ -235,8 +235,8 @@ ul {
 }
 
 .logo-circle--sm {
-  width: 40px;
-  height: 40px;
+  width: 150px;
+  height: 150px;
 }
 
 .logo-circle--sm .logo-svg {
@@ -1075,8 +1075,15 @@ ul {
   gap: var(--space-lg);
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .footer-logo {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: var(--space-base);
   margin-bottom: var(--space-md);
@@ -1089,9 +1096,10 @@ ul {
 }
 
 .footer-brand-text {
+  text-align: center;
   opacity: 0.8;
   margin-bottom: var(--space-md);
-  max-width: 340px;
+  max-width: 100%;
 }
 
 .footer-social {
