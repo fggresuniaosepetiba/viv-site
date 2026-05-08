@@ -1219,7 +1219,7 @@ ul {
 /* === Custom Scrollbar Premium === */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #3B72C4 #0C275F;
+  scrollbar-color: var(--primary) var(--background);
 }
 
 /* Overlay / Win11 native scrollbar fix */
