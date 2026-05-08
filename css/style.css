@@ -1216,6 +1216,34 @@ ul {
   box-shadow: 0 6px 24px rgba(0, 29, 89, 0.3);
 }
 
+/* === Custom Scrollbar === */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+  border-left: 1px solid var(--outline-variant);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0C275F;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--surface);
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #184494;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #0C275F var(--surface);
+  scrollbar-width: thin;
+}
+
 /* === Selection === */
 ::selection {
   background: var(--primary-fixed-dim);
