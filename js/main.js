@@ -5,6 +5,15 @@
    performance monitoring, service worker
    ============================================ */
 
+const getYear = () => {
+  const footerYear = document.querySelector(".footer-year");
+  let fullYear = new Date().getFullYear();
+
+  footerYear.textContent = fullYear;
+}
+
+getYear();
+
 (function () {
   'use strict';
 
