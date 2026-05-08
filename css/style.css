@@ -1216,32 +1216,37 @@ ul {
   box-shadow: 0 6px 24px rgba(0, 29, 89, 0.3);
 }
 
-/* === Custom Scrollbar === */
+/* === Custom Scrollbar Premium === */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3B72C4 #0C275F;
+}
+
+/* Overlay / Win11 native scrollbar fix */
+html {
+  overflow-y: scroll;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--surface);
-  border-left: 1px solid var(--outline-variant);
+  background: #0C275F;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0C275F;
-  border-radius: var(--radius-full);
-  border: 2px solid var(--surface);
-  transition: background 0.2s ease;
+  background: #3B72C4;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #184494;
+  background: #5A8FD4;
 }
 
-/* Firefox */
-html {
-  scrollbar-color: #0C275F var(--surface);
-  scrollbar-width: thin;
+::-webkit-scrollbar-corner {
+  background: #0C275F;
 }
 
 /* === Selection === */
