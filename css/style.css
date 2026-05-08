@@ -1073,6 +1073,7 @@ ul {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: var(--space-lg);
+  align-items: center;
 }
 
 .footer-brand {
@@ -1200,6 +1201,7 @@ ul {
   pointer-events: none;
   transform: translateY(20px);
   transition: all 0.3s ease;
+  border: 1px solid var(--on-primary);
 }
 
 .back-to-top.visible {
