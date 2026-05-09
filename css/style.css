@@ -1096,15 +1096,22 @@ ul {
   font-weight: var(--fw-semibold);
 }
 
+.footer-brand-text-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
 .footer-brand-text {
   text-align: center;
   opacity: 0.8;
   margin-bottom: var(--space-md);
-  max-width: 100%;
+  max-width: 340px;
 }
 
 .footer-social {
   display: flex;
+  justify-content: center;
   gap: var(--space-base);
 }
 
